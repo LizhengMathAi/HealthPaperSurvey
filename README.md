@@ -75,7 +75,7 @@
   * Massive *synthetic* dataset of aneurysm 3D geometries + CFD-derived hemodynamics.
   * Enables training models to predict flow features or risk markers directly from geometry, sidestepping expensive CFD.
 
-**SAM2Flow & Learning to Zoom with Anatomical Relations** ([NeurIPS][31])([NeurIPS][32])
+**SAM2Flow** ([NeurIPS][31]) & **Learning to Zoom with Anatomical Relations** ([NeurIPS][32])
 
 * **SAM2Flow**: interactive optical flow for in-vivo microcirculation videos using dual memory – think of a SAM-like interactive interface that refines flow fields based on user scribbles, with short- and long-term memory states.
 * **Learning to Zoom with Anatomical Relations**: dynamic zoom-in strategy for structure detection; the model learns which regions to crop at higher resolution based on anatomical context (e.g., “start at organ-level, then zoom to hilum, then vessel segment”).

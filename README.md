@@ -18,7 +18,7 @@
   * A TTA scheme tailored to *reconstruction* (complex-valued inverse problem) rather than classification.
   * Sane deployment story: low test-time overhead, no access to labels or raw k-space from the new site.
 
-**DIsoN: Decentralized Isolation Networks for Out-of-Distribution Detection in Medical Imaging**
+**DIsoN: Decentralized Isolation Networks for Out-of-Distribution Detection in Medical Imaging** ([arXiv][26])
 
 * Problem: OOD detection is crucial before we trust models on novel pathologies or scanners.
 * Idea: “Decentralized isolation networks” suggests multiple lightweight detectors operating on different feature subspaces (or anatomical regions), whose outputs are combined to estimate OOD scores.
@@ -27,7 +27,7 @@
   * Emphasis on *decentralized* / local detectors that can be aggregated securely (e.g., across sites) rather than a single central OOD model.
   * Better calibration of OOD scores in clinical regimes.
 
-**Fast MRI for All: Bridging Access Gaps by Training without Raw Data**
+**Fast MRI for All: Bridging Access Gaps by Training without Raw Data** ([arXiv][27])
 
 * Problem: Many hospitals store only magnitude images, not raw k-space; this blocks training supervised recon models.
 * High-level idea:
@@ -46,7 +46,7 @@
   * Multi-temporal tasks where the model must reason about changes between scans over time.
 * Findings: Current vision-language models (including medical ones) struggle especially with multi-temporal reasoning and 3D context, even when fine-tuned.
 
-**Dual-Res Tandem Mamba-3D: Bilateral Breast Lesion Detection and Classification on Non-contrast Chest CT**
+**Dual-Res Tandem Mamba-3D: Bilateral Breast Lesion Detection and Classification on Non-contrast Chest CT** ([NeurIPS][28])
 
 * Problem: Opportunistic breast lesion detection on non-contrast chest CT (not dedicated breast imaging).
 * Technical ideas:
@@ -63,19 +63,19 @@
   * Ontology nodes become queries/keys that steer cross-attention.
   * Encourages findings to be localized and explanations to be anatomically structured (“opacity in right lower lobe”) rather than purely pattern-based.
 
-**BrainODE: Neural Shape Dynamics for Age- and Disease-aware Brain Trajectories**
+**BrainODE: Neural Shape Dynamics for Age- and Disease-aware Brain Trajectories** ([OpenReview][29])
 
 * Problem: Brain morphology evolves over age and disease; static 3D shape models miss the *trajectory*.
 * Idea: Use neural ODEs to model continuous dynamics of 3D brain shapes across time / disease progression; enabling simulation and trajectory forecasting.
 
-**AneuG-Flow: A Large-Scale Synthetic Dataset of Diverse Intracranial Aneurysm Geometries and Hemodynamics**
+**AneuG-Flow: A Large-Scale Synthetic Dataset of Diverse Intracranial Aneurysm Geometries and Hemodynamics** ([NeurIPS][30])
 
 * Contribution:
 
   * Massive *synthetic* dataset of aneurysm 3D geometries + CFD-derived hemodynamics.
   * Enables training models to predict flow features or risk markers directly from geometry, sidestepping expensive CFD.
 
-**SAM2Flow & Learning to Zoom with Anatomical Relations**
+**SAM2Flow & Learning to Zoom with Anatomical Relations** ([NeurIPS][31])([NeurIPS][32])
 
 * **SAM2Flow**: interactive optical flow for in-vivo microcirculation videos using dual memory – think of a SAM-like interactive interface that refines flow fields based on user scribbles, with short- and long-term memory states.
 * **Learning to Zoom with Anatomical Relations**: dynamic zoom-in strategy for structure detection; the model learns which regions to crop at higher resolution based on anatomical context (e.g., “start at organ-level, then zoom to hilum, then vessel segment”).
@@ -440,3 +440,10 @@ Across all these NeurIPS 2025 health-imaging papers, some clear themes emerge:
 [22]: https://arxiv.org/abs/2506.07584 "MIRA: Medical Time Series Foundation Model for Real-World Health Data"
 [23]: https://arxiv.org/abs/2509.19980 "RAD: Towards Trustworthy Retrieval-Augmented Multi-modal Clinical Diagnosis"
 [25]: https://arxiv.org/pdf/2503.20815 "D2SA: Dual-Stage Distribution and Slice Adaptation for Efficient Test-Time Adaptation in MRI Reconstruction"
+[26]: https://arxiv.org/pdf/2506.09024 "DIsoN: Decentralized Isolation Networks for Out-of-Distribution Detection in Medical Imaging"
+[27]: https://arxiv.org/pdf/2411.13022 "Fast MRI for All: Bridging Access Gaps by Training without Raw Data"
+[28]: https://neurips.cc/virtual/2025/loc/san-diego/poster/117658 "Dual-Res Tandem Mamba-3D: Bilateral Breast Lesion Detection and Classification on Non-contrast Chest CT"
+[29]: https://openreview.net/pdf?id=7yOl9qiLWd "BrainODE: Neural Shape Dynamics for Age- and Disease-aware Brain Trajectories"
+[30]: https://neurips.cc/virtual/2025/loc/san-diego/poster/121403 "AneuG-Flow: A Large-Scale Synthetic Dataset of Diverse Intracranial Aneurysm Geometries and Hemodynamics"
+[31]: https://neurips.cc/virtual/2025/loc/san-diego/poster/115759 "SAM2Flow: Interactive Optical Flow Estimation with Dual Memory for in vivo Microcirculation Analysis"
+[32]: https://neurips.cc/virtual/2025/loc/san-diego/poster/118432 "Learning to Zoom with Anatomical Relations for Medical Structure Detection"

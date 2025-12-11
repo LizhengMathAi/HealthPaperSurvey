@@ -1,4 +1,4 @@
-Here’s a structured mini-survey over your NeurIPS 2025 health+imaging set. I’ll follow roughly your categories, then pull out cross-cutting themes at the end.
+# Mini-survey over NeurIPS 2025 health+imaging papers
 
 ---
 
@@ -415,13 +415,6 @@ Across all these NeurIPS 2025 health-imaging papers, some clear themes emerge:
 
    * PathVQ and SASHA directly address the computational burden of WSIs with token compression and sequential sampling.
    * 3D-RAD and Mamba-based models (Dual-Res Mamba-3D, Orochi) use architecture choices that scale better to 3D+time.
-
----
-
-If you’d like, next step could be:
-
-* Map *where your own work* (e.g., med VLMs, time-series models, or contrastive/self-sup methods) could plug into this landscape.
-* Or build a small table: rows = papers, cols = modality / task / “FM vs specialist” / “reasoning vs low-level” that you can paste into a related-work section.
 
 [1]: https://arxiv.org/abs/2506.11147?utm_source=chatgpt.com "3D-RAD: A Comprehensive 3D Radiology Med-VQA Dataset with Multi-Temporal Analysis and Diverse Diagnostic Tasks"
 [2]: https://neurips.cc/virtual/2025/loc/san-diego/day/12/5?utm_source=chatgpt.com "NeurIPS 2025 Friday 12/5"

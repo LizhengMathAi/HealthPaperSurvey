@@ -6,7 +6,7 @@
 
 ### 1.1 Test-time adaptation and robustness
 
-**D2SA: Dual-Stage Distribution and Slice Adaptation for Efficient Test-Time Adaptation in MRI Reconstruction**
+**D2SA: Dual-Stage Distribution and Slice Adaptation for Efficient Test-Time Adaptation in MRI Reconstruction** ([arXiv][25])
 
 * Problem: MRI reconstruction models trained on one distribution (scanner, hospital, protocol) often fail on new sites. Full retraining is impossible at deployment.
 * Idea (from title + TTA literature): D2SA performs *two* levels of adaptation at test time:
@@ -439,3 +439,4 @@ Across all these NeurIPS 2025 health-imaging papers, some clear themes emerge:
 [21]: https://arxiv.org/abs/2506.00711?utm_source=chatgpt.com "QoQ-Med: Building Multimodal Clinical Foundation Models with Domain-Aware GRPO Training"
 [22]: https://arxiv.org/abs/2506.07584?utm_source=chatgpt.com "MIRA: Medical Time Series Foundation Model for Real-World Health Data"
 [23]: https://arxiv.org/abs/2509.19980?utm_source=chatgpt.com "RAD: Towards Trustworthy Retrieval-Augmented Multi-modal Clinical Diagnosis"
+[25]: https://arxiv.org/pdf/2503.20815 "D2SA: Dual-Stage Distribution and Slice Adaptation for Efficient Test-Time Adaptation in MRI Reconstruction"

@@ -138,7 +138,7 @@
 
 ## 3. OCT / Ophthalmology / Retina
 
-**OCTDiff: Bridged Diffusion Model for Portable OCT Super-Resolution and Enhancement**
+**OCTDiff: Bridged Diffusion Model for Portable OCT Super-Resolution and Enhancement** ([NeurIPS][33])
 
 * Focus: Portable / low-cost OCT devices with noisy, low-res images.
 * Idea: A “bridged” diffusion model that learns mapping from low-quality to high-quality OCT volumes, possibly using intermediate anatomical priors.
@@ -344,7 +344,7 @@ DermaCon-IN, EndoBench, and 3D-RAD are likewise *domain-specific* multi-modal da
   * Better diagnostic performance on multiple imaging datasets.
   * Improved interpretability: saliency aligns better with abnormal regions and guideline criteria.
 
-**Chiron-o1: Igniting Multimodal LLMs towards Generalizable Medical Reasoning**
+**Chiron-o1: Igniting Multimodal LLMs towards Generalizable Medical Reasoning** ([arXiv][34])
 
 * Problem: Getting *good* chain-of-thought (CoT) for clinical reasoning is hard; naive CoT distillation often yields noisy or brittle reasoning.
 * Approach:
@@ -355,7 +355,7 @@ DermaCon-IN, EndoBench, and 3D-RAD are likewise *domain-specific* multi-modal da
 
   * Chiron-o1 shows strong step-by-step reasoning on in- and out-of-domain medical problems, with robust VQA and explanation quality.
 
-**MedMax: Mixed-Modal Instruction Tuning for Training Biomedical Assistants**
+**MedMax: Mixed-Modal Instruction Tuning for Training Biomedical Assistants** ([arXiv][35])
 
 * Dataset:
 
@@ -447,3 +447,6 @@ Across all these NeurIPS 2025 health-imaging papers, some clear themes emerge:
 [30]: https://neurips.cc/virtual/2025/loc/san-diego/poster/121403 "AneuG-Flow: A Large-Scale Synthetic Dataset of Diverse Intracranial Aneurysm Geometries and Hemodynamics"
 [31]: https://neurips.cc/virtual/2025/loc/san-diego/poster/115759 "SAM2Flow: Interactive Optical Flow Estimation with Dual Memory for in vivo Microcirculation Analysis"
 [32]: https://neurips.cc/virtual/2025/loc/san-diego/poster/118432 "Learning to Zoom with Anatomical Relations for Medical Structure Detection"
+[33]: https://neurips.cc/virtual/2025/loc/san-diego/poster/117693 "OCTDiff: Bridged Diffusion Model for Portable OCT Super-Resolution and Enhancement"
+[34]: https://arxiv.org/abs/2506.16962 "Chiron-o1: Igniting Multimodal Large Language Models towards Generalizable Medical Reasoning via Mentor-Intern Collaborative Search"
+[35]: https://arxiv.org/abs/2412.12661 "MedMax: Mixed-Modal Instruction Tuning for Training Biomedical Assistants"
